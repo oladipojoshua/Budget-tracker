@@ -1,0 +1,119 @@
+nav {
+    background-color: green;
+    color: white;
+    height: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+.text{
+    color: yellow;
+    font-size: 30px;
+}
+
+#gosh{
+    margin: 30px 300px;
+    margin-top: 30px;
+    border: 2px solid white;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 50px;
+    border-radius: 5px;
+}
+
+#flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+
+
+.box-input {
+    position: relative;
+    width: 170px;
+}
+
+.border {
+    background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #fffe00);
+    box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.1),
+        25px -10px 30px -5px rgba(65, 57, 63, 0.1),
+        25px 10px 30px -5px rgba(255, 174, 0, 0.1),
+        -25px 10px 30px -5px rgba(255, 230, 0, 0.1);
+    padding: 4px;
+}
+
+.input {
+    background-color: #212121;
+    max-width: 170px;
+    height: 40px;
+    padding: 0 19px 0 10px;
+    font-size: 1.1em;
+    position: relative;
+    border: none;
+    color: white;
+    outline: 0;
+    overflow: hidden;
+}
+
+.box-input::after,
+.box-input::before {
+    content: "";
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+}
+
+.box-input::after {
+    bottom: 0;
+    right: 0;
+}
+
+.box-input::before {
+    top: 0;
+    left: 0;
+}
+
+.input::placeholder {
+    transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s;
+}
+
+.input:focus::placeholder {
+    padding-left: 165px;
+    transform: translateY(-50px);
+}
+
+
+#but{
+    margin-top: 50px;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.button {
+    --font-color: #fefefe;
+    --bg-color: #111;
+    --main-color: #fefefe;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  
+  .button:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+    cursor: pointer;
+  }
+  
